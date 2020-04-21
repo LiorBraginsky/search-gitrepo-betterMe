@@ -1,4 +1,4 @@
-import axios from "../../utils/axios";
+import Axios from "../../utils/axios";
 import {
   GET_REPOSITORIES_REQUEST,
   GET_REPOSITORIES_FAILED,
@@ -54,9 +54,7 @@ export const getReposirotiesList = (repository, page = DEFAULT.PAGE) => {
   return async (dispatch) => {
     dispatch(getRepositoriesRequest());
     try {
-      const { data } = await axios.get("/search/repositories", {
-        params,
-      });
+      const { data } = await Axios("/search/repositories", params);
 
       dispatch(getRepositoriesSuccess(data));
     } catch (error) {
