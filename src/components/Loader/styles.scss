@@ -1,0 +1,47 @@
+.loader {
+  display: flex;
+  height: 166px;
+  display: flex;
+  padding: 25px 50px;
+  font-size: 2em;
+  position: relative;
+
+  button {
+    right: 55px;
+    position: absolute;
+    top: 30px;
+    width: 125px;
+    height: 48px;
+    border: 2px solid red;
+    border-radius: 4px;
+    color: black;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+
+    &:hover {
+      background: repeating-radial-gradient(red, transparent 100px);
+    }
+  }
+
+  .dots {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 10px;
+
+    width: 100px;
+
+    div {
+      position: relative;
+
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 100%;
+
+      background-color: black;
+    }
+  }
+}
